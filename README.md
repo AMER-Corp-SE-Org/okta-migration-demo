@@ -39,6 +39,40 @@ More specifically we are importing:
 5. Lastly, run another terraform plan to show that no changes will be made and that terraform and the resources already in existence are on the same page
   ```terraform apply```
 
+# How to run Demo
+
+1. Clone Repo onto local machine!
+2. Change Directories into Okta-Terraform
+   ```
+  cd okta-terraform
+   ```
+3. Run Terraform Plan with Generate Config Out Flag
+```
+terraform plan -generate-config-out=generated_resources.tf
+```
+4. Run Terraform Apply to import into state file
+```
+terraform apply
+```
+5. Run a plan to ensure that resources were imported correctly and that no changes need to be made
+```
+terraform plan
+```
+6. Clean Up (needed to get rid of resources from state file so it is ready to be imported next time):  
+```
+terraform state rm "okta_app_saml.google-workspace" ;
+terraform state rm "okta_app_saml.salesforce" ;
+terraform state rm "okta_app_saml.zendesk" ;
+terraform state rm "okta_group.group1" ;
+terraform state rm "okta_group.group2" ;
+terraform state rm "okta_policy_signon.policy1" ;
+terraform state rm "okta_policy_signon.policy2" ;
+terraform state rm "okta_user.user1" ;
+terraform state rm "okta_user.user2" ;
+terraform state rm "okta_user.user3" ;
+terraform state rm "okta_user.user4" ;
+terraform state rm "okta_user.user5" ;
+```
 
 # Tips & Tricks
 1. Make sure credentials for Okta org are attached to the workspace in TFC
