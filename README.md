@@ -42,3 +42,7 @@ More specifically we are importing:
 
 # Tips & Tricks
 1. Make sure credentials for Okta org are attached to the workspace in TFC
+
+# Resources Used
+* How I created extra email accounts:
+https://www.eringibson.co/how-to-create-unlimited-testing-accounts-with-the-gmail-hack/#:~:text=Here's%20how%20simple%20it%20is,hello%2Btesting%40mydomain.com
