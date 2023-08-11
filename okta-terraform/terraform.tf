@@ -5,6 +5,12 @@ terraform {
       version = "~> 4.1.0"
     }
   }
+  cloud{
+    organization = "AMER-Corp-SE-Org"
+    workspaces{
+      name = "okta-migration-demo"
+    }
+  }
 }
 
 # Configure the Okta Provider
