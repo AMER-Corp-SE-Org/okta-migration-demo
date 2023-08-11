@@ -80,3 +80,7 @@ terraform state rm "okta_user.user5" ;
 # Resources Used
 * How I created extra email accounts:
 https://www.eringibson.co/how-to-create-unlimited-testing-accounts-with-the-gmail-hack/#:~:text=Here's%20how%20simple%20it%20is,hello%2Btesting%40mydomain.com
+* How to Import:
+https://developer.hashicorp.com/terraform/language/import
+* How to generate Config to match import:
+https://developer.hashicorp.com/terraform/language/import/generating-configuration
