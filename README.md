@@ -43,9 +43,9 @@ More specifically we are importing:
 
 1. Clone Repo onto local machine!
 2. Change Directories into Okta-Terraform
-   ```
-  cd okta-terraform
-   ```
+```
+cd okta-terraform
+```
 3. Run Terraform Plan with Generate Config Out Flag
 ```
 terraform plan -generate-config-out=generated_resources.tf
